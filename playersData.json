@@ -89,11 +89,5 @@
         "id": 231096463,
         "trainBoost": "pases largos",
         "trainNormal": "Ctrl Balón"
-    },
-    {
-        "nombre": "Allan Victorino",
-        "id": 230135842,
-        "trainBoost": "pases",
-        "trainNormal": "remates"
     }
 ]
