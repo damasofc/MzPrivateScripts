@@ -129,20 +129,37 @@ Las **Variables** son para configuración que no es sensible.
 
 ---
 
-### Paso 4: Configurar los workflows
+### Paso 4: Configurar permisos de GitHub Actions
+Para que los workflows funcionen correctamente en tu fork, necesitas habilitar los permisos adecuados de GitHub Actions:
+
+1. Ve a la página de tu fork en GitHub.
+2. Haz clic en **Settings** (Configuración) en la barra superior del repositorio.
+3. En el menú lateral izquierdo, selecciona **Actions** > **General**.
+4. Desplázate hacia abajo hasta la sección **Workflow permissions**.
+5. Selecciona **Read and write permissions** (Permisos de lectura y escritura).
+6. Asegúrate de que la casilla **Allow GitHub Actions to create and approve pull requests** esté marcada si deseas que los workflows puedan crear pull requests (opcional).
+7. Haz clic en **Save** para guardar los cambios.
+
+**⚠️ ¿Por qué son necesarios estos permisos?**
+- **Read permissions**: Permiten que los workflows accedan al código del repositorio.
+- **Write permissions**: Permiten que los workflows suban artefactos (como capturas de pantalla de errores) y escriban en el repositorio si es necesario.
+
+---
+
+### Paso 5: Configurar los workflows
 1. Los workflows ya están configurados en los archivos `.github/workflows/workflow-boost-true.yml` y `.github/workflows/workflow-boost-false.yml`.
 2. Estos workflows se ejecutarán automáticamente según los horarios definidos en el archivo `.yml` o manualmente desde la pestaña **Actions** en tu repositorio.
 
 ---
 
-### Paso 5: Ejecutar el workflow manualmente (opcional)
+### Paso 6: Ejecutar el workflow manualmente (opcional)
 1. Ve a la pestaña **Actions** en tu repositorio.
 2. Selecciona el workflow que deseas ejecutar (`Run Puppeteer with Boost True` o `Run Puppeteer with Boost False`).
 3. Haz clic en **Run workflow** y sigue las instrucciones.
 
 ---
 
-### Paso 6: Verificar resultados
+### Paso 7: Verificar resultados
 - Los resultados del script se mostrarán en los logs de la ejecución del workflow en la pestaña **Actions**.
 - Si ocurre un error, se generará una captura de pantalla que se subirá como un artefacto descargable en la misma pestaña.
 
