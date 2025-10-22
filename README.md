@@ -41,9 +41,15 @@ npm install
 ### Paso 3: Configurar variables de entorno
 Crea un archivo `.env` en la raíz del proyecto y define las siguientes variables:
 ```env
+USERNAME=tu_nombre_de_usuario_de_managerzone
 USER_PASSWORD=tu_contraseña_de_managerzone
 IS_TRAIN_BOOST=true # Cambia a false si deseas desactivar el boost
 ```
+
+**⚠️ Importante sobre el archivo .env:**
+- El archivo `.env` contiene información sensible y **NO debe subirse al repositorio**.
+- Este archivo ya está incluido en `.gitignore` para evitar que se suba accidentalmente.
+- Cada persona que clone el repositorio debe crear su propio archivo `.env` con sus credenciales personales.
 
 ### Paso 4: Ejecutar el script
 Para ejecutar el script, utiliza el siguiente comando:
@@ -90,12 +96,36 @@ Este repositorio es público, puedes clonarlo y configurarlo para ejecutarlo en 
 ---
 
 ### Paso 3: Configurar las variables de entorno en GitHub
+Para que el script funcione en GitHub Actions, necesitas configurar las credenciales de forma segura:
+
+#### 3.1. Configurar Secrets (información sensible)
+Los **Secrets** son variables encriptadas que GitHub usa para almacenar información sensible como contraseñas.
+
 1. Ve a la página de tu fork en GitHub.
-2. Haz clic en **Settings** > **Secrets and variables** > **Actions**.
-3. Crea los siguientes **Secrets**:
-   - `USER_PASSWORD`: Tu contraseña de ManagerZone.
-4. Crea las siguientes **Variables**:
-   - `IS_TRAIN_BOOST`: Define `true` o `false` según el modo de entrenamiento que desees usar.
+2. Haz clic en **Settings** (Configuración) en la barra superior del repositorio.
+3. En el menú lateral izquierdo, selecciona **Secrets and variables** > **Actions**.
+4. Haz clic en el botón **New repository secret**.
+5. Crea el siguiente Secret:
+   - **Name (Nombre)**: `USER_PASSWORD`
+   - **Value (Valor)**: Tu contraseña de ManagerZone
+   - Haz clic en **Add secret** para guardar.
+
+**⚠️ Importante sobre los Secrets:**
+- Los Secrets están encriptados y no se pueden ver una vez guardados.
+- Si olvidas tu contraseña, tendrás que crear un nuevo Secret.
+- Nunca compartas tus Secrets ni los escribas en el código.
+
+#### 3.2. Configurar Variables (configuración general)
+Las **Variables** son para configuración que no es sensible.
+
+1. En la misma página **Secrets and variables** > **Actions**.
+2. Selecciona la pestaña **Variables** (al lado de Secrets).
+3. Haz clic en **New repository variable**.
+4. Crea las siguientes Variables:
+   - **Name**: `USERNAME`  
+     **Value**: Tu nombre de usuario de ManagerZone (por ejemplo: `jeep27`)
+   - **Name**: `IS_TRAIN_BOOST`  
+     **Value**: Define `true` o `false` según el modo de entrenamiento que desees usar.
 
 ---
 
