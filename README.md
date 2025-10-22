@@ -41,9 +41,12 @@ npm install
 ### Paso 3: Configurar variables de entorno
 Crea un archivo `.env` en la raíz del proyecto y define las siguientes variables:
 ```env
+USERNAME=tu_usuario_managerzone
 USER_PASSWORD=tu_contraseña_de_managerzone
 IS_TRAIN_BOOST=true # Cambia a false si deseas desactivar el boost
 ```
+
+**Nota importante**: Debes reemplazar `tu_usuario_managerzone` con tu nombre de usuario real de ManagerZone.
 
 ### Paso 4: Ejecutar el script
 Para ejecutar el script, utiliza el siguiente comando:
@@ -90,12 +93,25 @@ Este repositorio es público, puedes clonarlo y configurarlo para ejecutarlo en 
 ---
 
 ### Paso 3: Configurar las variables de entorno en GitHub
-1. Ve a la página de tu fork en GitHub.
-2. Haz clic en **Settings** > **Secrets and variables** > **Actions**.
-3. Crea los siguientes **Secrets**:
-   - `USER_PASSWORD`: Tu contraseña de ManagerZone.
-4. Crea las siguientes **Variables**:
-   - `IS_TRAIN_BOOST`: Define `true` o `false` según el modo de entrenamiento que desees usar.
+Para que el script funcione correctamente en GitHub Actions, debes configurar tu contraseña como un secret y tu nombre de usuario como una variable.
+
+#### Configurar USER_PASSWORD (contraseña)
+1. Ve a tu repositorio en GitHub.
+2. Haz clic en **Settings** (Configuración).
+3. En el menú lateral, selecciona **Secrets and variables** > **Actions**.
+4. Haz clic en **New repository secret**.
+5. Pon como nombre: `USER_PASSWORD`
+6. Pon como valor: tu contraseña de ManagerZone.
+7. Haz clic en **Add secret** para guardar el secret.
+
+#### Configurar USERNAME (nombre de usuario) e IS_TRAIN_BOOST
+1. En la misma página de **Secrets and variables** > **Actions**.
+2. Ve a la pestaña **Variables** (al lado de Secrets).
+3. Haz clic en **New repository variable**.
+4. Crea las siguientes variables:
+   - **Nombre**: `USERNAME`, **Valor**: tu nombre de usuario de ManagerZone (ejemplo: jeep27).
+   - **Nombre**: `IS_TRAIN_BOOST`, **Valor**: `true` o `false` según el modo de entrenamiento que desees usar.
+5. Haz clic en **Add variable** para guardar cada variable.
 
 ---
 
