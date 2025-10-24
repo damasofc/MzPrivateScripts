@@ -36,23 +36,17 @@
         "trainBoost": "velocidad",
         "trainNormal": "cabeza"
     },
-    {
-        "nombre": "Gao Bing Chang",
-        "id": 221579435,
-        "trainBoost": "remates",
-        "trainNormal": "remates"
-    },
-    {
+{
         "nombre": "Arnaldo Bastia",
         "id": 221422921,
         "trainBoost": "entradas",
         "trainNormal": "B. parado"
     },
     {
-        "nombre": "Zé Paulo da Silveira",
-        "id": 221111821,
-        "trainBoost": "pases",
-        "trainNormal": "cabeza"
+        "nombre": "Gao Bing Chang",
+        "id": 221579435,
+        "trainBoost": "remates",
+        "trainNormal": "remates"
     },
     {
         "nombre": "Hu Cheng",
