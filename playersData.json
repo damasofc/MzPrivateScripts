@@ -25,12 +25,6 @@
         "trainNormal": "B. parado"
     },
     {
-        "nombre": "Nicu Petrulean",
-        "id": 221499205,
-        "trainBoost": "Velocidad",
-        "trainNormal": "B. parado"
-    },
-    {
         "nombre": "Sarbelio Calderon",
         "id": 228342149,
         "trainBoost": "velocidad",
@@ -46,13 +40,13 @@
         "nombre": "Gao Bing Chang",
         "id": 221579435,
         "trainBoost": "remates",
-        "trainNormal": "remates"
+        "trainNormal": "atajando"
     },
     {
         "nombre": "Hu Cheng",
         "id": 219413468,
         "trainBoost": "resistencia",
-        "trainNormal": "atajando"
+        "trainNormal": "B. parado"
     },
     {
         "nombre": "Alek Candries",
