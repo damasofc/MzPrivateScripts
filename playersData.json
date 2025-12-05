@@ -28,7 +28,7 @@
         "nombre": "Nicu Petrulean",
         "id": 221499205,
         "trainBoost": "Velocidad",
-        "trainNormal": "B. parado"
+        "trainNormal": "remates"
     },
     {
         "nombre": "Sarbelio Calderon",
@@ -46,7 +46,7 @@
         "nombre": "Gao Bing Chang",
         "id": 221579435,
         "trainBoost": "remates",
-        "trainNormal": "remates"
+        "trainNormal": "B. parado"
     },
     {
         "nombre": "Hu Cheng",
