@@ -30,7 +30,13 @@
         "trainBoost": "velocidad",
         "trainNormal": "remates"
     },
-{
+    {
+        "nombre": "Khvicha Kvaratskhelia",
+        "id": 228342149,
+        "trainBoost": "222238329",
+        "trainNormal": "B. parado"
+    },
+    {
         "nombre": "Arnaldo Bastia",
         "id": 221422921,
         "trainBoost": "entradas",
