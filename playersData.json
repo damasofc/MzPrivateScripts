@@ -19,10 +19,10 @@
         "trainNormal": "atajando"
     },
     {
-        "nombre": "Harry Bengtsson",
-        "id": 218376905,
-        "trainBoost": "velocidad",
-        "trainNormal": "B. parado"
+        "nombre": "Ladislao Bustamante",
+        "id": 231096463,
+        "trainBoost": "pases largos",
+        "trainNormal": "remates"
     },
     {
         "nombre": "Sarbelio Calderon",
@@ -77,11 +77,5 @@
         "id": 222626898,
         "trainBoost": "remates",
         "trainNormal": "atajando"
-    },
-    {
-        "nombre": "Ladislao Bustamante",
-        "id": 231096463,
-        "trainBoost": "pases largos",
-        "trainNormal": "remates"
     }
 ]
