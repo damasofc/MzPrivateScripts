@@ -55,12 +55,6 @@
         "trainNormal": "B. parado"
     },
     {
-        "nombre": "Alek Candries",
-        "id": 221561059,
-        "trainBoost": "pases",
-        "trainNormal": "entradas"
-    },
-    {
         "nombre": "Sam Huveneers",
         "id": 225325200,
         "trainBoost": "resistencia",
@@ -77,5 +71,11 @@
         "id": 222626898,
         "trainBoost": "remates",
         "trainNormal": "atajando"
+    },
+    {
+        "nombre": "Concetto Mare",
+        "id": 222001267,
+        "trainBoost": "pases",
+        "trainNormal": "entradas"
     }
 ]
