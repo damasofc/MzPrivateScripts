@@ -1,16 +1,16 @@
 [
     
     {
-        "nombre": "Emilian Zdrascu",
-        "id": 219922617,
-        "trainBoost": "Ctrl Balón",
-        "trainNormal": "remates"
+        "nombre": "Buba Lopez",
+        "id": 226559091,
+        "trainBoost": "resistencia",
+        "trainNormal": "pases"
     },
     {
         "nombre": "Ian Boberg",
         "id": 223344614,
         "trainBoost": "Ctrl Balón",
-        "trainNormal": "remates"
+        "trainNormal": "atajando"
     },
     {
         "nombre": "De chino",
@@ -70,7 +70,7 @@
         "nombre": "Nejat Balm",
         "id": 222626898,
         "trainBoost": "remates",
-        "trainNormal": "atajando"
+        "trainNormal": "cabeza"
     },
     {
         "nombre": "Concetto Mare",
