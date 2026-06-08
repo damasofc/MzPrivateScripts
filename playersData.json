@@ -25,6 +25,12 @@
         "trainNormal": "B. parado"
     },
     {
+        "nombre": "M. Fachrul Rojak",
+        "id": 223313762,
+        "trainBoost": "pases largos",
+        "trainNormal": "remates"
+    },
+    {
         "nombre": "Sarbelio Calderon",
         "id": 228342149,
         "trainBoost": "velocidad",
@@ -65,6 +71,12 @@
         "id": 222308655,
         "trainBoost": "resistencia",
         "trainNormal": "remates"
+    },
+    {
+        "nombre": "Gao Di Bing",
+        "id": 225600382,
+        "trainBoost": "pases",
+        "trainNormal": "B. parado"
     },
     {
         "nombre": "Nejat Balm",
