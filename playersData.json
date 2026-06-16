@@ -43,10 +43,10 @@
         "trainNormal": "B. parado"
     },
     {
-        "nombre": "Arnaldo Bastia",
-        "id": 221422921,
-        "trainBoost": "entradas",
-        "trainNormal": "atajando"
+        "nombre": "Gao Di Bing",
+        "id": 225600382,
+        "trainBoost": "pases",
+        "trainNormal": "B. parado"
     },
     {
         "nombre": "Gao Bing Chang",
@@ -73,10 +73,10 @@
         "trainNormal": "remates"
     },
     {
-        "nombre": "Gao Di Bing",
-        "id": 225600382,
+        "nombre": "Hami Balyemez",
+        "id": 225404621,
         "trainBoost": "pases",
-        "trainNormal": "B. parado"
+        "trainNormal": "pases"
     },
     {
         "nombre": "Nejat Balm",
