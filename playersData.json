@@ -4,7 +4,7 @@
         "nombre": "Buba Lopez",
         "id": 226559091,
         "trainBoost": "resistencia",
-        "trainNormal": "cabeza"
+        "trainNormal": "Ctrl Balón"
     },
     {
         "nombre": "Ian Boberg",
@@ -16,7 +16,7 @@
         "nombre": "Ladislao Bustamante",
         "id": 231096463,
         "trainBoost": "pases largos",
-        "trainNormal": "B. parado"
+        "trainNormal": "cabeza"
     },
     {
         "nombre": "M. Fachrul Rojak",
@@ -64,7 +64,7 @@
         "nombre": "Txaran Echaez",
         "id": 222308655,
         "trainBoost": "resistencia",
-        "trainNormal": "remates"
+        "trainNormal": "B. parado"
     },
     {
         "nombre": "Hami Balyemez",
