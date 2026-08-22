@@ -4,8 +4,8 @@ on:
   schedule:
     # De domingo a jueves a las 7:50 PM GMT-6 (1:50 AM UTC del día siguiente)
     - cron: "50 1 * * 1-5"
-    # Viernes a las 11:30 PM GMT-6 (5:30 AM UTC del sábado)
-    - cron: "30 6 * * 6"
+    # Viernes a las 11:30 PM GMT-6 (7:30 AM UTC del sábado)
+    - cron: "30 7 * * 6"
   workflow_dispatch:
     inputs:
       boost_mode:
