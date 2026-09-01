@@ -41,9 +41,15 @@ npm install
 ### Paso 3: Configurar variables de entorno
 Crea un archivo `.env` en la raíz del proyecto y define las siguientes variables:
 ```env
+USERNAME=tu_nombre_de_usuario_de_managerzone
 USER_PASSWORD=tu_contraseña_de_managerzone
 IS_TRAIN_BOOST=true # Cambia a false si deseas desactivar el boost
 ```
+
+**⚠️ Importante sobre el archivo .env:**
+- El archivo `.env` contiene información sensible y **NO debe subirse al repositorio**.
+- Este archivo ya está incluido en `.gitignore` para evitar que se suba accidentalmente.
+- Cada persona que clone el repositorio debe crear su propio archivo `.env` con sus credenciales personales.
 
 ### Paso 4: Ejecutar el script
 Para ejecutar el script, utiliza el siguiente comando:
@@ -90,29 +96,70 @@ Este repositorio es público, puedes clonarlo y configurarlo para ejecutarlo en 
 ---
 
 ### Paso 3: Configurar las variables de entorno en GitHub
+Para que el script funcione en GitHub Actions, necesitas configurar las credenciales de forma segura:
+
+#### 3.1. Configurar Secrets (información sensible)
+Los **Secrets** son variables encriptadas que GitHub usa para almacenar información sensible como contraseñas.
+
 1. Ve a la página de tu fork en GitHub.
-2. Haz clic en **Settings** > **Secrets and variables** > **Actions**.
-3. Crea los siguientes **Secrets**:
-   - `USER_PASSWORD`: Tu contraseña de ManagerZone.
-4. Crea las siguientes **Variables**:
-   - `IS_TRAIN_BOOST`: Define `true` o `false` según el modo de entrenamiento que desees usar.
+2. Haz clic en **Settings** (Configuración) en la barra superior del repositorio.
+3. En el menú lateral izquierdo, selecciona **Secrets and variables** > **Actions**.
+4. Haz clic en el botón **New repository secret**.
+5. Crea el siguiente Secret:
+   - **Name (Nombre)**: `USER_PASSWORD`
+   - **Value (Valor)**: Tu contraseña de ManagerZone
+   - Haz clic en **Add secret** para guardar.
+
+**⚠️ Importante sobre los Secrets:**
+- Los Secrets están encriptados y no se pueden ver una vez guardados.
+- Si olvidas tu contraseña, tendrás que crear un nuevo Secret.
+- Nunca compartas tus Secrets ni los escribas en el código.
+
+#### 3.2. Configurar Variables (configuración general)
+Las **Variables** son para configuración que no es sensible.
+
+1. En la misma página **Secrets and variables** > **Actions**.
+2. Selecciona la pestaña **Variables** (al lado de Secrets).
+3. Haz clic en **New repository variable**.
+4. Crea las siguientes Variables:
+   - **Name**: `USERNAME`  
+     **Value**: Tu nombre de usuario de ManagerZone (por ejemplo: `jeep27`)
+   - **Name**: `IS_TRAIN_BOOST`  
+     **Value**: Define `true` o `false` según el modo de entrenamiento que desees usar.
 
 ---
 
-### Paso 4: Configurar los workflows
+### Paso 4: Configurar permisos de GitHub Actions
+Para que los workflows funcionen correctamente en tu fork, necesitas habilitar los permisos adecuados de GitHub Actions:
+
+1. Ve a la página de tu fork en GitHub.
+2. Haz clic en **Settings** (Configuración) en la barra superior del repositorio.
+3. En el menú lateral izquierdo, selecciona **Actions** > **General**.
+4. Desplázate hacia abajo hasta la sección **Workflow permissions**.
+5. Selecciona **Read and write permissions** (Permisos de lectura y escritura).
+6. Asegúrate de que la casilla **Allow GitHub Actions to create and approve pull requests** esté marcada si deseas que los workflows puedan crear pull requests (opcional).
+7. Haz clic en **Save** para guardar los cambios.
+
+**⚠️ ¿Por qué son necesarios estos permisos?**
+- **Read permissions**: Permiten que los workflows accedan al código del repositorio.
+- **Write permissions**: Permiten que los workflows suban artefactos (como capturas de pantalla de errores) y escriban en el repositorio si es necesario.
+
+---
+
+### Paso 5: Configurar los workflows
 1. Los workflows ya están configurados en los archivos `.github/workflows/workflow-boost-true.yml` y `.github/workflows/workflow-boost-false.yml`.
 2. Estos workflows se ejecutarán automáticamente según los horarios definidos en el archivo `.yml` o manualmente desde la pestaña **Actions** en tu repositorio.
 
 ---
 
-### Paso 5: Ejecutar el workflow manualmente (opcional)
+### Paso 6: Ejecutar el workflow manualmente (opcional)
 1. Ve a la pestaña **Actions** en tu repositorio.
 2. Selecciona el workflow que deseas ejecutar (`Run Puppeteer with Boost True` o `Run Puppeteer with Boost False`).
 3. Haz clic en **Run workflow** y sigue las instrucciones.
 
 ---
 
-### Paso 6: Verificar resultados
+### Paso 7: Verificar resultados
 - Los resultados del script se mostrarán en los logs de la ejecución del workflow en la pestaña **Actions**.
 - Si ocurre un error, se generará una captura de pantalla que se subirá como un artefacto descargable en la misma pestaña.
 
