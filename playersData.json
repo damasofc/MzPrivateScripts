@@ -70,13 +70,7 @@
         "nombre": "Hami Balyemez",
         "id": 225404621,
         "trainBoost": "pases",
-        "trainNormal": "cabeza"
-    },
-    {
-        "nombre": "Nejat Balm",
-        "id": 222626898,
-        "trainBoost": "remates",
-        "trainNormal": "cabeza"
+        "trainNormal": "atajando"
     },
     {
         "nombre": "Concetto Mare",
