@@ -25,7 +25,8 @@ async function launchBrowser() {
     await page.goto("https://www.managerzone.com/?changesport=soccer");
 
     await page.waitForSelector('#login_username', { visible: true });
-    await page.type('#login_username', 'jeep27');
+    const username = process.env.USERNAME;
+    await page.type('#login_username', username);
 
     await page.waitForSelector('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll', { visible: true });
     await page.click('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll');

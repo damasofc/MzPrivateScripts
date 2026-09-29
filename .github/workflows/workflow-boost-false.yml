@@ -30,6 +30,7 @@ jobs:
 
       - name: Run Puppeteer Script with Boost False
         env:
+          USERNAME: ${{ vars.USERNAME }}
           USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
           IS_TRAIN_BOOST: false  # Establecer boost a false
         run: |
