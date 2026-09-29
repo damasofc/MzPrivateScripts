@@ -13,6 +13,12 @@
         "trainNormal": "atajando"
     },
     {
+        "nombre": "Efrain Guillelmo",
+        "id": 229023090,
+        "trainBoost": "Ctrl Balón",
+        "trainNormal": "cabeza"
+    },
+    {
         "nombre": "Ladislao Bustamante",
         "id": 231096463,
         "trainBoost": "pases largos",
