@@ -13,10 +13,10 @@
         "trainNormal": "atajando"
     },
     {
-        "nombre": "Efrain Guillelmo",
-        "id": 229023090,
-        "trainBoost": "Ctrl Balón",
-        "trainNormal": "B. parado"
+        "nombre": "Adrian Gartxot",
+        "id": 228224181,
+        "trainBoost": "pases",
+        "trainNormal": "atajando"
     },
     {
         "nombre": "Ladislao Bustamante",
@@ -77,6 +77,12 @@
         "id": 225404621,
         "trainBoost": "pases",
         "trainNormal": "atajando"
+    },
+    {
+        "nombre": "Efrain Guillelmo",
+        "id": 229023090,
+        "trainBoost": "Ctrl Balón",
+        "trainNormal": "B. parado"
     },
     {
         "nombre": "Concetto Mare",
