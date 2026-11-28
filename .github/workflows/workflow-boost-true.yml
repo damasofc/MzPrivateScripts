@@ -33,6 +33,7 @@ jobs:
 
       - name: Run Puppeteer Script with Boost True
         env:
+          USERNAME: ${{ vars.USERNAME }}
           USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
           IS_TRAIN_BOOST: true  # Establecer boost a true
         run: |
